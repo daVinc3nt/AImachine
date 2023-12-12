@@ -41,7 +41,7 @@ body {
         align-items: center;
         border-bottom: 5px solid saddlebrown;
 }
-input {
+.input-file {
         display: none;
 }
 
