@@ -29,7 +29,9 @@
           src="nhang.png"
           alt=""
         />
-        <img src="bkutemple.png" alt="" />
+        <img class="add" src="add_icon.png" alt="">
+        <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file">
+        <img class="temple" src="bkutemple.png" alt="" />
       </div>
 
       <div class="form">
@@ -46,6 +48,19 @@
   </body>
 
   <script>
+    document.addEventListener('DOMContentLoaded', function() {
+  const addImage = document.querySelector('.add');
+  const inputFile = document.querySelector('#input-file');
+
+  addImage.addEventListener('click', function() {
+    inputFile.click();
+  });
+  
+  inputFile.addEventListener('change', function() {
+    addImage.src = URL.createObjectURL(inputFile.files[0]);
+    console.log(inputFile.files);
+  });
+});
     const btn = document.querySelector(".btn");
     const quehuong = document.querySelector(".quehuong");
     const phat = document.querySelector(".phat");
