@@ -41,10 +41,9 @@ body {
         align-items: center;
         border-bottom: 5px solid saddlebrown;
 }
-.input-file {
+#input-file {
         display: none;
 }
-
 .add {
         position: absolute;
         max-height: 20vh;
