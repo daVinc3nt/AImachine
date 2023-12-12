@@ -41,6 +41,9 @@ body {
         align-items: center;
         border-bottom: 5px solid saddlebrown;
 }
+input {
+        display: none;
+}
 
 .add {
         position: absolute;
