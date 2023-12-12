@@ -120,6 +120,13 @@ body {
                 justify-content: center;
                 align-self: flex-end;
         }
+
+        .phat {
+                display: none;
+        }
+        .quehuong {
+                margin-top: 250px;
+        }
       }
 @media screen and (max-width:600px) {
         .phat {
